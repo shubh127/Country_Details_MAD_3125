@@ -42,4 +42,10 @@ public class DetailsActivity extends AppCompatActivity {
         ((TextView) findViewById(R.id.tv_capital)).setText(String.format("Capital City: %s",
                 details.getCapitalCity()));
     }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
 }
